@@ -385,7 +385,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose, par
             <div className="space-y-2">
               <Label>Payment Method</Label>
               <div className="grid grid-cols-2 gap-2">
-                {(['upi', 'qr', 'netbanking', 'card', 'cash'] as PaymentMethod[]).map((method) => (
+                {(['upi', 'qr', 'cash'] as PaymentMethod[]).map((method) => (
                   <Button
                     key={method}
                     type="button"
